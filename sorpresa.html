@@ -1,0 +1,279 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>🐤 Para ti 💖</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+
+            background: linear-gradient(
+                135deg,
+                #fff0f6,
+                #ffe8cc,
+                #e7f5ff
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 30px;
+
+            overflow-x: hidden;
+        }
+
+        .tarjeta {
+            width: 100%;
+            max-width: 700px;
+
+            background: rgba(255, 255, 255, 0.85);
+
+            padding: 40px;
+
+            border-radius: 30px;
+
+            text-align: center;
+
+            box-shadow:
+                0 20px 50px rgba(0, 0, 0, 0.12);
+
+            animation: aparecer 1.5s ease;
+        }
+
+        .pato {
+            font-size: 90px;
+
+            animation: saltar 1.2s infinite alternate ease-in-out;
+        }
+
+        h1 {
+            margin: 15px 0;
+
+            font-size: 45px;
+
+            color: #ff4f91;
+
+            text-shadow: 2px 2px 5px #ffc2d9;
+        }
+
+        .subtitulo {
+            font-size: 22px;
+            color: #555;
+            margin-bottom: 25px;
+        }
+
+        /* IMAGEN */
+
+        .foto {
+            width: 250px;
+            height: 250px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 7px solid white;
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.15);
+
+            margin: 10px auto 25px;
+
+            display: block;
+        }
+
+        .mensaje {
+            font-size: 19px;
+
+            line-height: 1.7;
+
+            color: #555;
+
+            margin: auto;
+
+            max-width: 570px;
+        }
+
+        .firma {
+            margin-top: 30px;
+
+            font-size: 20px;
+
+            color: #ff4f91;
+
+            font-weight: bold;
+        }
+
+        .patitos {
+            margin-top: 25px;
+
+            font-size: 35px;
+
+            letter-spacing: 10px;
+        }
+
+        /* CORAZONES */
+
+        .decoracion {
+            position: fixed;
+
+            font-size: 30px;
+
+            animation: flotar 4s infinite ease-in-out;
+
+            pointer-events: none;
+        }
+
+        .d1 {
+            left: 8%;
+            top: 15%;
+        }
+
+        .d2 {
+            right: 8%;
+            top: 20%;
+            animation-delay: 1s;
+        }
+
+        .d3 {
+            left: 12%;
+            bottom: 15%;
+            animation-delay: 2s;
+        }
+
+        .d4 {
+            right: 12%;
+            bottom: 12%;
+            animation-delay: 1.5s;
+        }
+
+        @keyframes aparecer {
+
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes saltar {
+
+            from {
+                transform: translateY(0) rotate(-5deg);
+            }
+
+            to {
+                transform: translateY(-15px) rotate(5deg);
+            }
+        }
+
+        @keyframes flotar {
+
+            0%, 100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-25px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="decoracion d1">💖</div>
+    <div class="decoracion d2">✨</div>
+    <div class="decoracion d3">🌸</div>
+    <div class="decoracion d4">💗</div>
+
+
+    <div class="tarjeta">
+
+        <div class="pato">🐤🎀</div>
+
+        <h1>¡Feliz Cumpleaños! 🎂</h1>
+
+        <div class="subtitulo">
+            El patito tiene algo que decirte... 🐤💖
+        </div>
+
+
+        <img
+            src="pato.jpg"
+            class="foto"
+        >
+
+
+        <div class="mensaje">
+
+            <p>
+                🐤💛
+            </p>
+
+            <p>
+                <strong>
+                    El patito te desea un muy, muy feliz cumpleaños.
+                </strong>
+            </p>
+
+            <br>
+
+            <p>
+                Espera que hoy tengas un día increíble,
+                lleno de sonrisas, momentos bonitos,
+                personas que te quieren y muchas razones
+                para estar feliz. ✨
+            </p>
+
+            <br>
+
+            <p>
+                Que todos esos sueños que tienes poco a poco
+                se vayan cumpliendo y que este nuevo año
+                de tu vida venga acompañado de muchas
+                experiencias increíbles. 💐
+            </p>
+
+            <br>
+
+            <p>
+                Nunca dejes de ser esa persona especial que eres
+                y recuerda disfrutar cada pequeño momento. 💖
+            </p>
+
+        </div>
+
+
+        <div class="firma">
+            Quiero decirtq que, 🐤💗
+            <br>
+            <span>una parte de ti siempre estara conmigo. ✨</span>
+        </div>
+
+
+        <div class="patitos">
+            🐤 🐤 🐤
+        </div>
+
+    </div>
+
+</body>
+</html>
+```

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂 Feliz Cumpleaños </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, #ffe6f2, #e5f6ff);
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #ff4f91;
+            animation: aparecer 2s ease;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #555;
+            margin: 15px;
+        }
+
+        p {
+            max-width: 600px;
+            font-size: 20px;
+            line-height: 1.6;
+            color: #444;
+            margin: auto;
+        }
+
+        .pato {
+            font-size: 100px;
+            margin: 20px;
+            animation: saltar 1s infinite alternate;
+        }
+
+        button {
+            margin-top: 25px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            background: #ff4f91;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #ff2779;
+        }
+
+        /* Globos */
+        .globo {
+            position: absolute;
+            font-size: 60px;
+            animation: flotar 4s infinite ease-in-out;
+        }
+
+        .g1 { left: 5%; top: 20%; }
+        .g2 { right: 5%; top: 15%; animation-delay: 1s; }
+        .g3 { left: 15%; bottom: 10%; animation-delay: 2s; }
+        .g4 { right: 15%; bottom: 12%; animation-delay: 1.5s; }
+
+        /* Confeti */
+        .confeti {
+            position: absolute;
+            width: 10px;
+            height: 20px;
+            animation: caer 5s linear infinite;
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes saltar {
+            from {
+                transform: translateY(0) rotate(-5deg);
+            }
+            to {
+                transform: translateY(-20px) rotate(5deg);
+            }
+        }
+
+        @keyframes flotar {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        @keyframes caer {
+            from {
+                top: -30px;
+                transform: rotate(0deg);
+            }
+            to {
+                top: 110vh;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Globos -->
+    <div class="globo g1">🎈</div>
+    <div class="globo g2">🎈</div>
+
+    <!-- Confeti -->
+    <div class="confeti" style="left:10%; background:#ff4f91;"></div>
+    <div class="confeti" style="left:25%; background:#ffd43b; animation-delay:1s;"></div>
+    <div class="confeti" style="left:40%; background:#4dabf7; animation-delay:2s;"></div>
+    <div class="confeti" style="left:60%; background:#69db7c; animation-delay:3s;"></div>
+    <div class="confeti" style="left:75%; background:#ff922b; animation-delay:1.5s;"></div>
+    <div class="confeti" style="left:90%; background:#da77f2; animation-delay:2.5s;"></div>
+
+    <div class="contenedor">
+
+        <div class="pato">🐤</div>
+
+        <h1>🎉 ¡Feliz Cumpleaños a la mejor personita! 🎉</h1>
+
+        <h2>Para mi amiguita la mas bella 💖</h2>
+
+        <p>
+            Hoy es un día muy especial ya que es tu cumpleños 
+            y estoy feliz de ser tu amigo. 🥳
+            <br><br>
+
+            Espero que este nuevo año de tu vida esté lleno de
+            momentos increíbles, risas, sueños cumplidos y muchas
+            cosas bonitas ya que te lo mereces vic. ✨
+            <br><br>
+
+            Nunca cambies esa forma tan especial de ser, recuerda que siempre llevare 
+            una parte de nuestras momentos en mi corazon te quiero mucho.
+            ¡Disfruta muchísimo tu día te lo mereces! 🎂💐
+        </p>
+
+        <button onclick="celebrar()">
+            🎁 ¡Presiona aquí!
+        </button>
+
+    </div>
+
+    <script>
+    function celebrar() {
+        window.location.href = "sorpresa.html";
+    }
+</script>
+
+</body>
+</html>
+```
