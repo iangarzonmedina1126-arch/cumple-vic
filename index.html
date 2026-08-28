@@ -13,7 +13,7 @@
         }
 
         body {
-            height: 100vh;
+            min-height: 100vh;
             overflow: hidden;
             background: linear-gradient(135deg, #ffe6f2, #e5f6ff);
             font-family: Arial, sans-serif;
@@ -26,10 +26,12 @@
             text-align: center;
             position: relative;
             z-index: 2;
+            width: 95%;
         }
 
         h1 {
             font-size: 50px;
+            max-width: 95vw;
             color: #ff4f91;
             animation: aparecer 2s ease;
         }
@@ -56,6 +58,7 @@
 
         button {
             margin-top: 25px;
+            min-height: 50px;
             padding: 15px 30px;
             border: none;
             border-radius: 30px;
@@ -79,9 +82,9 @@
         }
 
         .g1 { left: 5%; top: 20%; }
-        .g2 { right: 5%; top: 15%; animation-delay: 1s; }
-        .g3 { left: 15%; bottom: 10%; animation-delay: 2s; }
-        .g4 { right: 15%; bottom: 12%; animation-delay: 1.5s; }
+        .g2 { right: 5%; top: 15%; }
+        .g3 { left: 15%; bottom: 10%; }
+        .g4 { right: 15%; bottom: 12%; }
 
         /* Confeti */
         .confeti {
@@ -128,6 +131,39 @@
             to {
                 top: 110vh;
                 transform: rotate(360deg);
+            }
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 32px;
+            }
+
+            h2 {
+                font-size: 23px;
+                margin: 12px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.4;
+                max-width: 90%;
+            }
+
+            .pato {
+                font-size: 75px;
+                margin: 10px;
+            }
+
+            button {
+                font-size: 17px;
+                padding: 14px 25px;
+            }
+
+            .globo {
+                font-size: 45px;
             }
         }
     </style>
@@ -177,11 +213,12 @@
     </div>
 
     <script>
-    function celebrar() {
-        window.location.href = "sorpresa.html";
-    }
-</script>
+        function celebrar() {
+            window.location.href = "sorpresa.html";
+        }
+    </script>
 
 </body>
 </html>
 ```
+
